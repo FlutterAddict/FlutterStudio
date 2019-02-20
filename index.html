@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flutter Studio</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <header class="AppBar">
+      <div class="AppBar-side">
+        <ion-icon class="AppBar-logo" name="ios-aperture" size="large"></ion-icon>
+        <div class="AppBar-title">Flutter Studio</div>
+      </div>
+      <div class="AppBar-side">
+        <a href="#" class="AppBar-item" tooltip="Toggle Dark Theme" tooltip-position="bottom">
+          <ion-icon name="ios-contrast" size="large"></ion-icon>
+        </a>
+        <a href="#" class="AppBar-item" tooltip="GitHub Page" tooltip-position="bottom">
+          <ion-icon name="logo-github" size="large"></ion-icon>
+        </a>
+        <input 
+          class="AppBar-search" 
+          placeholder="Search" 
+          spellcheck="false"
+          autocomplete="false"
+          type="search"
+        />
+      </div>
+    </header>
+    <div class="App">
+      <nav class="Drawer">
+        <div class="Drawer-item js-drawer-item Drawer-item--active" data-content-key="docs/whats-flutter-studio">
+          What is Flutter Center?
+        </div>
+        <div class="Drawer-item js-drawer-item" data-content-key="docs/why-flutter">
+          Why Flutter?
+        </div>
+      </nav>
+      <main class="Content">
+        <div class="Content-wrapper js-content-container">
+          <h1>Welcome to Flutter Studio!</h1>
+          <p>Flutter Studio is a Web App fully dedicated to both beginner and advanced Flutter developers.</p>
+        </div>
+      </main>
+    </div>
+    <script src="js/app.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+  </body>
+</html>

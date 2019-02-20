@@ -1,0 +1,14 @@
+.Drawer
+  width: 250px
+  height: 100%
+  background: $darker
+  &-item
+    padding: 8px 16px
+    user-select: none
+    &:hover
+      background: lighten($darker, 7.5%)
+    &--active
+      border-right: 2px solid white
+      background: lighten($darker, 10%)
+      &:hover
+        background: lighten($darker, 10%)
