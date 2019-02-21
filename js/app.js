@@ -1,5 +1,6 @@
 import { init as drawer } from './components/drawer';
-import loadContent from './components/content';
+import { load } from './components/content';
+import './components/appbar';
 
 
 
@@ -8,4 +9,4 @@ drawer([
   { key: 'why-flutter', label: 'Why Flutter?' },  
 ]);
 
-loadContent('whats-flutter-studio');
+load('whats-flutter-studio');

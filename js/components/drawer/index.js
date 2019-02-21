@@ -1,6 +1,6 @@
 import { x, _x, getWidth } from '../../helpers';
 import populateDrawer from './populate';
-import loadContent from '../content';
+import { load } from '../content';
 import './swipe';
 
 
@@ -11,7 +11,7 @@ const init = data => {
 
 const onDrawerItemClick = item => {
   activate(item);
-  loadContent(item.dataset.contentKey);
+  load(item.dataset.contentKey);
 };
 
 const activate = item => {
