@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Flutter Studio</title>
     <link rel="stylesheet" href="css/app.min.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#090B10">
   </head>
 
   <body>
@@ -40,9 +42,14 @@
 
     <div class="App">
       <nav class="Drawer js-drawer">
-        
+        <div class="Drawer-mobile js-drawer-mobile">
+          <div class="Drawer-mobile-item Drawer-mobile-item--active">FLUTTER</div>
+          <div class="Drawer-mobile-item">DART</div>
+          <div class="Drawer-mobile-item">GUIDES</div>
+          <div class="Drawer-mobile-item">EXAMPLES</div>
+        </div>
       </nav>
-      <main class="Content">
+      <main class="Content js-content-parent">
         <div class="Content-wrapper js-content-container"></div>
       </main>
     </div>

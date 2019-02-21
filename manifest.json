@@ -1,0 +1,10 @@
+{
+  "short_name": "Studio",
+  "name": "Flutter Studio",
+  "icons": [],
+  "start_url": "/index.html",
+  "background_color": "#0F111A",
+  "display": "fullscreen",
+  "scope": "/",
+  "theme_color": "#0F111A"
+}

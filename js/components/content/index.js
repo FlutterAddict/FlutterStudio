@@ -1,22 +1,17 @@
-import { x, get } from '../../helpers';
+import { x, get, getWidth } from '../../helpers';
+import { setVisibility } from '../drawer';
 
 
 
 let contentContainer = x('.js-content-container');
+let contentParent = x('.js-content-parent');
 
 
 
-let visible = true;
-let setVisibility = visibility => {
-  visible = visibility;
-  let newVisibilityStyle = visible ? 'block' : 'none';
-  contentContainer.style.display = newVisibilityStyle;
-};
+contentParent.addEventListener('click', () => {
+  setVisibility(getWidth() > 920);
+});
 
 
 
-const load = contentKey => get(`docs/${contentKey}.html`, contentContainer);
-
-
-
-export { visible, load, setVisibility };
+export default contentKey => get(`docs/${contentKey}.html`, contentContainer);

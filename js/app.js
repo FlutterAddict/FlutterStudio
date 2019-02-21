@@ -1,5 +1,5 @@
-import drawer from './components/drawer';
-import { load as loadContent } from './components/content';
+import { init as drawer } from './components/drawer';
+import loadContent from './components/content';
 
 
 

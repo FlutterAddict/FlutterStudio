@@ -1,13 +1,11 @@
 import { x, _x, getWidth } from '../../helpers';
 import populateDrawer from './populate';
-import { 
-  load as loadContent, 
-  setVisibility as setContentVisibility
-} from '../content';
+import loadContent from '../content';
+import './swipe';
 
 
 
-const initialize = data => {
+const init = data => {
   items = populateDrawer(drawer, data, onDrawerItemClick);
 };
 
@@ -19,7 +17,9 @@ const onDrawerItemClick = item => {
 const activate = item => {
   deactivateAllItems();
   item.classList.add('Drawer-item--active');
-  setVisibility(false);
+  if (getWidth() < 920) {
+    setVisibility(false);
+  }
 };
 
 const deactivateAllItems = () => {
@@ -32,26 +32,15 @@ const setVisibility = visibility => drawer.style.display = visibility ? 'block' 
 
 let burger = x('.js-burger');
 let drawer = x('.js-drawer');
+let mobileDrawerTabs = x('.js-drawer-mobile');
 let items = [];
+
+
+
 setVisibility(getWidth()>920);
+window.addEventListener('resize', () => setVisibility(getWidth()>920));
+burger.addEventListener('click', () => setVisibility(drawer.style.display != 'block'));
 
 
 
-window.addEventListener('resize', () => {
-  setVisibility(getWidth() > 920);
-  setContentVisibility(true);
-});
-
-burger.addEventListener('click', () => {
-  if (drawer.style.display == 'block') {
-    setVisibility(false);
-    setContentVisibility(true);
-  } else {
-    setVisibility(true);
-    setContentVisibility(false);
-  };
-});
-
-
-
-export default data => initialize(data);
+export { init, setVisibility };
