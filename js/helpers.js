@@ -1,5 +1,6 @@
 const x = s => document.querySelector(s);
 const X = s => document.querySelectorAll(s);
+const _x = s => document.createElement(s);
 
 const get = (key, target) => {
   let request = new XMLHttpRequest();
@@ -14,6 +15,9 @@ const get = (key, target) => {
   request.send();
 };
 
+const getWidth = () => {
+  return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+};
 
 
-export { x, X, get };
+export { x, X, get, _x, getWidth };
