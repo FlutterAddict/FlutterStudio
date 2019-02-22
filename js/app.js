@@ -5,8 +5,9 @@ import './components/appbar';
 
 
 drawer([
-  { key: 'whats-flutter-studio', label: 'What is Flutter Studio?', active: true },
-  { key: 'why-flutter', label: 'Why Flutter?' },  
+  { key: 'flutter/features', label: 'Flutter Features', active: true },
 ]);
 
-load('whats-flutter-studio');
+
+
+load('flutter/features');
