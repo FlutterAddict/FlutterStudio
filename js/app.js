@@ -6,6 +6,7 @@ import './components/appbar';
 
 drawer([
   { key: 'flutter/features', label: 'Flutter Features', active: true },
+  { key: 'flutter/ui-basics', label: 'User Interface Basics' },
 ]);
 
 

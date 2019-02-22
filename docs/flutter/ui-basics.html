@@ -1,0 +1,40 @@
+<article>
+
+  <h1>User Interface Basics</h1>
+
+  <section>
+    <h2>Widgets, Widgets Everywhere</h2>
+    <p>In Flutter, we build user interfaces using Widgets.</p>
+    <p>Everything in Flutter app is a widget.</p>
+    <p>You have widgets for animations, for building layouts, and even the app itself is a widget.</p>    
+  </section>
+
+  <section>
+    <h2>Flutter is Reactive</h2>
+    <p>Widgets describe what their view should look like given their current configuration and state.</p>
+    <p>When a widget's state changes, the widget rebuilds its description and the framework diffs against previous description in order to determine minimal changes needed in the underlying render tree to transition from one state to next.</p>
+    <p>That makes Flutter Reactive.</p>    
+  </section>
+
+  <section>
+    <h2>Hello World</h2>
+    <p>Let's write an app that will only show "Hello World" in the middle of the screen:</p>
+<pre><code>import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    Center(
+      child: Text(
+        'Hello World',
+        textDirection: TextDirection.ltr,
+      ),
+    ),
+  );
+}</code></pre>
+  </section>
+
+  <section>
+    <h2>To be continued...</h2>
+  </section>
+
+</article>
