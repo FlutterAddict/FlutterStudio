@@ -1,0 +1,101 @@
+<article>
+
+  <h1>Hello World App</h1>
+  <p>So you know already know Dart and have installed and setup Flutter on your machine.</p>
+  <p>Let's create a very simple Hello World app with Flutter.</p>
+  <p>The app will only show a 'Hello World' text in the center of the screen.</p>
+
+  <!-- Add screenshots of completed app -->
+
+  <section>
+    <h2>1. Create New Project</h2>
+    <p>This one is very simple. Just open VS Code, open the terminal by pressing <code>ctrl + `</code> and run the command:</p>
+<pre><code>flutter create hello_world</pre></code>
+    <p>This will initialize new Flutter project and make a new directory named <code>hello_world</code>.</p>
+  </section>
+
+  <section>
+    <h2>2. Open <code>lib/main.dart</code></h2>
+    <p>The root source file of your app is in <code>lib/main.dart</code>. Open this file and delete its contents.</p>
+  </section>
+
+  <section>
+    <h2>3. Import Flutter Package</h2>
+    <p>Now lets import the Flutter package to our Dart program:</p>
+    <pre><code>// main.dart
+import 'package:flutter/material.dart';</code></pre>
+  </section>
+
+  <section>
+    <h2>4. Create Main Function</h2>
+    <p>As you should already know from our Dart Basics, all Dart programs start from the <code>main()</code> function.</p>
+    <p>It is a required, special, top-level function, where the program starts.</p>
+<pre><code>// main.dart
+import 'package:flutter/material.dart';
+
+void main() {
+  
+}
+</code></pre>
+  </section>
+
+  <section>
+    <h2>5. Call the <code>runApp()</code> Function</h2>
+    <p>The <code>runApp()</code> is a function provided by Flutter. We imported it with many other in the step 3.</p>
+    <p>It makes the widget we give to it the root of widget tree and forces it to cover the screen.</p>
+<pre><code>void main() {
+  runApp(
+    // We'll pass the root widget in next step
+  );
+}</code></pre>
+  </section>
+
+  <section>
+    <h2>6. Pass our Root Widget</h2>
+    <p>In this app, the root widget will be a widget named <code>Center()</code>, which is a simple widget that centers its child within itself.</p>
+<pre><code>void main() {
+  runApp(
+    Center(
+
+    ),
+  );
+}</code></pre>
+  </section>
+  <!-- note about Dart function vs Flutter Widget Class -->
+  <!-- note about trailing commas that are intentional and why -->
+  <section>
+    <h2>7. Pass the Text Widget</h2>
+    <p>It's pretty straightforward:</p>
+<pre><code>runApp(
+  Center(
+    child: Text('Hello World',
+      textDirection: TextDirection.ltr,
+    ),
+  ),
+),</code></pre>
+    <p>Yeah, the <code>textDirection</code> must be specified if it's not a descedant of the <code>MaterialApp()</code> widget.</p>
+    <p>Later we'll learn how to use <code>MaterialApp()</code> widget and we'll not have to specify the <code>textDirection</code> every time.</p>
+  </section>
+
+  <section>
+    <h2>Congratulations</h2>
+    <p>Congrats! You made it. Here's the complete source code of our Flutter Hello World app:</p>
+<pre><code>import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    Center(
+      child: Text('Hello World',
+        textDirection: TextDirection.ltr,
+      ),
+    ),
+  );
+}</code></pre>
+  </section>
+
+  <section>
+    <h2>Feel Free to Ask</h2>
+    <p>If something isn't clear, just ask - I'm glad to help You :)</p>
+  </section>
+
+</article>

@@ -23,9 +23,16 @@ It is responsive and mobile friendly, supports dark theme (which can be toggled)
 
 
 ## To-do:
+- [ ] Special onHover effect when hovering on Flutter's functions and widgets
+- [ ] Tags
+- [ ] Persist User Settings
+- [ ] Font Toggler
+- [ ] AppBar and Drawer Shadows
+- [ ] Add `favicon.ico`
 - [ ] HTML5 History based Navigation
-- [ ] Manifest icons, Make it Offline
-- [ ] Add Breadcrumbs
-- [ ] Add a Footer
+- [ ] `manifest.json` icons
+- [ ] PWA with Offline Support
+- [ ] Breadcrumbs
+- [ ] Footer
 - [ ] Next Button
 - [x] Styled Links

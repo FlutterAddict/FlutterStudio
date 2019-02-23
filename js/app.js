@@ -1,14 +1,17 @@
-import { init as drawer } from './components/drawer';
-import { load } from './components/content';
+import { init as initDrawer } from './components/drawer';
+import { load as loadContent } from './components/content';
 import './components/appbar';
 
 
 
-drawer([
-  { key: 'flutter/features', label: 'Flutter Features', active: true },
-  { key: 'flutter/ui-basics', label: 'User Interface Basics' },
-]);
+const content = [
+  { key: 'flutter/0-Welcome', label: 'Welcome to Flutter Studio', active: true },
+  { key: 'flutter/1-Why-Flutter', label: 'Why Flutter?' },
+  { key: 'flutter/2-Hello-World', label: 'Hello World App' },  
+];
 
 
 
-load('flutter/features');
+
+initDrawer(content);
+loadContent(content[0].key);

@@ -6,6 +6,7 @@ import { setVisibility } from '../drawer';
 const themes = [
   ['#0F111A','#FAFAFA', '#BBBBBB'],
   ['#FAFAFA','#090B10', '#444444'],
+  ['#17181C','#FFFFFF', '#DDDDDD'],
 ]
 
 

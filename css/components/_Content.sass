@@ -11,3 +11,19 @@
     font-size: 21px
   &-wrapper
     max-width: 1000px
+    section
+      margin-top: 80px
+      +lessThan(920px)
+        margin-top: 64px
+      > section
+        margin-top: 64px
+        +lessThan(920px)
+          margin-top: 48px
+        > section
+          margin-top: 48px
+          +lessThan(920px)
+            margin-top: 32px
+          > section
+            margin-top: 32px
+            +lessThan(920px)
+              margin-top: 16px
