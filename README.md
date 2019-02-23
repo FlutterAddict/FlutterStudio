@@ -1,11 +1,5 @@
 # Flutter Studio
-Ultra-fast, mobile-friendly, featherweight docs, guides, examples and tools for both beginner and experienced Flutter developers.   
-
-Supports dark theme but you can toggle it if you want.   
-
-The Web App is extremely lightweight (2.69KB JS bundle, React is 133KB) thanks to no framework or external libraries used.   
-   
-It's powered by minimum amount of HTML5, CSS3 (I used SASS pre-compiller) and pure JavaScript (ES6+ compiled down with WebPack).   
+Better organized and beginner-friendly docs for learning Flutter.
 
 
 
@@ -21,10 +15,19 @@ It's powered by minimum amount of HTML5, CSS3 (I used SASS pre-compiller) and pu
 
 
 
-## Tech Used
+## Technical
+To make the web app featherweight, I have used no framework.   
+It's powered by minimal amount of HTML5, CSS, and JavaScript.   
+It is responsive and mobile friendly, supports dark theme (which can be toggled), and even supports the swipe gesture to open the drawer.   
+
+### Technologies Used
 - HTML5
-- CSS, SASS
+- CSS with Sass pre-compiller
 - JavaScript (ES6+)
 - WebPack
 - AJAX
 - RWD
+
+### External Libraries
+- Normalize.CSS
+- PrismJS for code highlighting
