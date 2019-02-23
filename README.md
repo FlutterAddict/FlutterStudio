@@ -3,20 +3,8 @@ Better organized and beginner-friendly docs for learning Flutter.
 
 
 
-## To-do:
-- HTML5 History based Navigation
-- Icons, Make it Offline
-- Add Honeycrumbs
-- CSSTricks-like Typography
-- Add a footer
-- Next Button
-- Styled Links
-- Content and tools will come.
-
-
-
 ## Technical
-To make the web app featherweight, I have used no framework.   
+To make the web app featherweight, I have used no CSS or JavaScript framework.   
 It's powered by minimal amount of HTML5, CSS, and JavaScript.   
 It is responsive and mobile friendly, supports dark theme (which can be toggled), and even supports the swipe gesture to open the drawer.   
 
@@ -31,3 +19,13 @@ It is responsive and mobile friendly, supports dark theme (which can be toggled)
 ### External Libraries
 - Normalize.CSS
 - PrismJS for code highlighting
+
+
+
+## To-do:
+- [ ] HTML5 History based Navigation
+- [ ] Manifest icons, Make it Offline
+- [ ] Add Breadcrumbs
+- [ ] Add a Footer
+- [ ] Next Button
+- [x] Styled Links
