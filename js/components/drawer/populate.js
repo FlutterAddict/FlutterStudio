@@ -3,6 +3,7 @@ import { _x } from '../../helpers';
 
 
 export default (drawer, data, onDrawerItemClick) => {
+  drawer.innerHTML = '';
   let items = [];
   data.map(item => {
     let div = _x('div');

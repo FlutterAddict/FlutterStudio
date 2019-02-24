@@ -6,7 +6,7 @@ import './swipe';
 
 
 const init = data => {
-  items = populateDrawer(drawer, data, onDrawerItemClick);
+  items = populateDrawer(drawerInner, data, onDrawerItemClick);
 };
 
 const onDrawerItemClick = item => {
@@ -32,7 +32,7 @@ const setVisibility = visibility => drawer.style.display = visibility ? 'block' 
 
 let burger = x('.js-burger');
 let drawer = x('.js-drawer');
-let mobileDrawerTabs = x('.js-drawer-mobile');
+let drawerInner = x('.js-drawer-inner');
 let items = [];
 
 

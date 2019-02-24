@@ -21,10 +21,8 @@
         <ion-icon class="AppBar-logo" name="ios-aperture" size="large"></ion-icon>
         <ion-icon class="AppBar-burger js-burger" name="ios-menu" size="large"></ion-icon>
         <div class="AppBar-title">Flutter Studio</div>
-        <div class="AppBar-tab">DART</div>
-        <div class="AppBar-tab AppBar-tab--active">FLUTTER</div>
-        <div class="AppBar-tab">EXAMPLES</div>
-        <div class="AppBar-tab">GUIDES</div>
+        <div class="AppBar-tab js-tab AppBar-tab--active" data-to="dart">DART</div>
+        <div class="AppBar-tab js-tab" data-to="flutter">FLUTTER</div>
       </div>
       <div class="AppBar-side">
         <div class="AppBar-item js-theme-toggler" tooltip="Toggle Dark Theme" tooltip-position="bottom">
@@ -46,11 +44,10 @@
     <div class="App">
       <nav class="Drawer js-drawer">
         <div class="Drawer-mobile js-drawer-mobile">
-          <div class="Drawer-mobile-item">DART</div>
-          <div class="Drawer-mobile-item Drawer-mobile-item--active">FLUTTER</div>
-          <div class="Drawer-mobile-item">GUIDES</div>
-          <div class="Drawer-mobile-item">EXAMPLES</div>
+          <div class="Drawer-mobile-item js-tab Drawer-mobile-item--active" data-to="dart">DART</div>
+          <div class="Drawer-mobile-item js-tab" data-to="flutter">FLUTTER</div>
         </div>
+        <div class="js-drawer-inner"></div>
       </nav>
       <main class="Content js-content-parent">
         <div class="Content-wrapper language-dart js-content-container"></div>
