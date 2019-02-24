@@ -9,4 +9,7 @@ export default {
     { key: 'flutter/1-Why-Flutter', label: 'Why Flutter?' },
     { key: 'flutter/2-Hello-World', label: 'Hello World App' },
   ],
+  blog: [
+    { key: 'blog/flutter-vs-rn', label: 'Flutter vs. React Native', active: true },
+  ],
 };
