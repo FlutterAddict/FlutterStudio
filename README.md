@@ -23,11 +23,14 @@ It is responsive and mobile friendly, supports dark theme (which can be toggled)
 
 
 ## To-do:
+- [ ] Add content loading placeholder
+- [ ] Normalize AppBar tabs and Drawer tabs and optimize its code
+- [ ] Prism Highlight Line Extension
+- [ ] Code copy button
 - [ ] Special onHover effect when hovering on Flutter's functions and widgets
 - [ ] Tags
 - [ ] Persist User Settings
 - [ ] Font Toggler
-- [ ] AppBar and Drawer Shadows
 - [ ] Add `favicon.ico`
 - [ ] HTML5 History based Navigation
 - [ ] `manifest.json` icons
@@ -35,4 +38,5 @@ It is responsive and mobile friendly, supports dark theme (which can be toggled)
 - [ ] Breadcrumbs
 - [ ] Footer
 - [ ] Next Button
+- [x] AppBar and Drawer Shadows
 - [x] Styled Links
