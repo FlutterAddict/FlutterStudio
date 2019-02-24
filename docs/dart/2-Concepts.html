@@ -1,0 +1,37 @@
+<article>
+
+  <h1>Important Concepts</h1>
+  <p>As you learn about the Dart language, keep these facts and concepts in mind.</p>
+
+  <section>
+    <h2>Everything is an Object</h2>
+    <p>Everything you can place in a variable is an object, and every object is an instance of a class.</p>
+    <p>Even numbers, functions and <code>null</code> are objects.</p>
+    <p>All objects inherit from the <a href="https://api.dartlang.org/stable/dart-core/Object-class.html">Object</a> class</p>
+  </section>
+
+  <section>
+    <h2>Dart Can Infer Types</h2>
+    <p>Although Dart is strongly typed, type annotations are optional because Dart can infer types.</p>
+    <p>When you want to explicitly say that no type is expected, use the special type <code>dynamic</code>.</p>
+    <p>Let me demonstrate this with examples:</p>
+
+    <section>
+      <h3>Type Inference Example</h3>
+      <pre><code>var n = 42;</code></pre>
+      <p>In the code above, <code>n</code> is inferred to be of type <code>int</code>.</p>
+      <p>That means that if you try to assign a string to it:</p>
+      <pre><code>n = 'esskeetit';</code></pre>
+      <p>It will throw an error, because <code>n</code> is of <code>int</code> type and can't hold a <code>String</code>.</p>
+    </section>
+
+    <section>
+      <h3>Dynamic Type Example</h3>
+<pre><code>dynamic x = 42;
+x = 'forty two';</code></pre>
+      <p>This will work properly, without any error.</p>
+    </section>
+
+  </section>
+
+</article>

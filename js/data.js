@@ -1,8 +1,8 @@
 export default {
   dart: [
-    { key: 'dart/0-Intro', label: 'Dart Introduction', active: true },
-    { key: 'dart/1-Hello-World', label: 'Hello World Program' },
-    { key: 'dart/2-Double-It', label: 'Double It Program' },
+    { key: 'dart/0-Intro', label: 'Introduction', active: true },
+    { key: 'dart/1-Hello-World', label: 'Hello World' },
+    { key: 'dart/2-Concepts', label: 'Important Concepts' },
   ],
   flutter: [
     { key: 'flutter/0-Welcome', label: 'Welcome to Flutter Studio', active: true },
