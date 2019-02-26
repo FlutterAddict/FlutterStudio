@@ -1,0 +1,123 @@
+<article>
+
+  <h1>Basic Widgets</h1>
+  <p>Learn about basic, most commonly used Flutter widgets.</p>
+
+  <section>
+    <h2>Widgets, Widgets Everywhere</h2>
+    <p>In Flutter, you build the User Interfaces using Widgets.</p>
+    <p>Almost everything in a Flutter app is a Widget.</p>
+    <p>We have Widgets for layouts, for animations and even the app itself is a Widget.</p>
+  </section>
+
+  <section>
+    <h2>Basic Widgets</h2>
+    <p>Flutter comes with a suite of powerful basic widgets, of which the following are very commonly used.</p>
+
+    <section>
+      <h3><code>Text()</code> Widget</h3>
+      <p>This widget lets you create a run of styled text within your application.</p>
+<pre><code>import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    Center(
+      child: Text('Hello World',
+        textDirection: TextDirection.ltr
+      ),
+    ),
+  );
+}</code></pre>
+    </section>
+
+    <section>
+      <h3><code>Container()</code> Widget</h3>
+      <p>This Widget creates a rectangular visual element that can be decorated with a <a href="#">BoxDecoration</a>, such as background, a border or a shadow.</p>
+      <p>A <code>Container()</code> Widget can also have margins, padding and constraints applied to its size.</p>
+      <p>In addition, it can be transformed in three dimensional space using a matrix.</p>
+
+      <section>
+        <h4>Example</h4>
+<pre><code>import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    Container(
+      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+      decoration: BoxDecoration(color: Colors.blue[500]),
+      child: Text('Hello from a Container!', 
+        textDirection: TextDirection.ltr
+      ),
+    ),
+  );
+}</code></pre>        
+      </section>
+
+    </section>
+
+    <section>
+      <h3><code>Row()</code> and <code>Column()</code> Widgets</h3>
+      <p>These flex widgets let you create flexible layouts in both horizontal (<code>Row()</code> Widget) and verical (<code>Column()</code> Widget) directions. It is a design based on the web's flexbox layout model.</p>
+
+      <section>
+        <h4>Example</h4>
+<pre><code>import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    Column(
+      children: &lt;Widget&gt;[
+        Row(
+          children: &lt;Widget&gt;[
+            Text('A', textDirection: TextDirection.ltr),
+            Text('B', textDirection: TextDirection.ltr),
+          ],
+        ),
+        Row(
+          children: &lt;Widget&gt;[
+            Text('C', textDirection: TextDirection.ltr),
+            Text('D', textDirection: TextDirection.ltr),
+          ],
+        ),
+      ],
+    ),
+  );
+}</code></pre>        
+      </section>
+
+    </section>
+
+    <section>
+      <h3><code>Stack()</code> Widget</h3>
+      <p>This widget lets you create stack widgets on top of each other in paint order.</p>
+      <p>You can then use the <code>Positioned()</code> widget on a children of a <code>Stack()</code> widget to position them relative to the top, right, bottom or left edge of the stack.</p>
+      <p>Stacks are based on the web's absolute positioning layout model.</p>
+
+      <section>
+        <h4>Example</h4>
+        <p>Lets create an app that will show a 300x300px red rectangle with Text widget within it (or on top of it), absolutely positioned on (x: 100, y: 100), so (top: 100, left: 100).</p>
+<pre><code>import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    Stack(
+      width: 300.0,
+      height: 300.0,
+      color: Colors.red[300],
+      children: [
+        Positioned(
+          child: Text('Hello', textDirection: TextDirection.ltr),
+          left: 100.0,
+          top: 100.0
+        ),
+      ],
+    ),
+  );
+}</code></pre>
+      </section>
+
+    </section>
+
+  </section>
+
+</article>
