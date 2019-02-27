@@ -1,0 +1,54 @@
+<article>
+  
+  <h1>Using Material Components</h1>
+  <p>Flutter provides a number of widgets that help you build apps that follow Material Design.</p>
+
+  <section>
+    <h2>Material Apps</h2>
+    <p>Using the <a href="#">MaterialApp</a> is entirely optional but a good practice.</p>
+    <p>It will build a number of useful widgets at the root of your app, including <a href="#">Navigator</a> which lets you transition smoothly between screens of your app.</p>
+    <p>Many widgets need to be inside of a <a href="#">Material App</a> to display properly, in order to inherit theme data.</p>
+
+    <section>
+      <h3>Example</h3>
+      <p>Here is a code for a very basic Material app.</p>
+<pre><code>import 'package:dart/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      title: 'Your App Title',
+      home: Scaffold( // Scaffold is a layout for the major Material Components
+        appBar: AppBar(
+          leading: IconButton(
+            icon: Icon(Icons.menu),
+            tooltip: 'Open Navigation Menu',
+            onPressed: null,
+          ),
+          title: Text('Home'),
+          actions: &lt;Widget&gt;[
+            IconButton(
+              icon: Icon(Icons.search),
+              tooltip: 'Search',
+              onPressed: null,
+            ),
+          ],
+        ),
+        body: Center(
+          child: Text('Material Hello World'),
+        ),
+        floatingActionButton: FloatingActionButton(
+          tooltip: 'Example FAB',
+          child: Icon(Icons.add),
+          onPressed: null,
+        )
+      ),
+    ),
+  );
+}</code></pre>
+
+    </section>
+
+  </section>
+
+</article>

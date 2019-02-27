@@ -9,6 +9,7 @@ export default {
     { key: 'flutter/Why-Flutter', label: 'Why Flutter?' },
     { key: 'flutter/Hello-World', label: 'Hello World App' },
     { key: 'flutter/Basic-Widgets', label: 'Basic Widgets' },
+    { key: 'flutter/Using-Material', label: 'Using Material Components' },
     { key: 'flutter/Custom-Widgets', label: 'Custom Widgets' },
   ],
   blog: [

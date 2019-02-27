@@ -12,8 +12,42 @@
   <section>
     <h2>Widget's <code>build()</code> Function</h2>
     <p>A widget's main job is to implement a <code>build()</code> function, which describes a widget in terms of other, lower-level widgets.</p>
-    <p>The framework builds those widgets in turn until the process bottoms out in widgets that represent the underlying <code>RenderObject</code>, which computes and describes the geometry of the Widget.</p>
+    <p>The framework builds those widgets in turn until the process bottoms out in widgets that represent the underlying <a href="#">RenderObject</a>, which computes and describes the geometry of the Widget.</p>
   </section>
 
+  <section>
+    <h2>Creating StatelessWidget</h2>
+    <p>Creating your own, custom Stateless Widgets is really straightforward and easy.</p>
+    <p>You just create new class which extends the <code>StatelessWidget</code> class and define the <code>build()</code> function.</p>
+
+    <section>
+      <h3>Example #1</h3>
+<pre><code>import 'package:flutter/material.dart';
+
+void main() {
+  runApp(TheApp());
+}
+
+class TheApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Text('Hello World', 
+        textDirection: TextDirection.ltr
+      ),
+    ),
+  }
+}</code></pre>
+    </section>
+    
+    <section>
+      <h3>Example #2</h3>
+      <p>We'll recreate the material app from example in previous lesson, but this time we'll split the Material components into their own Stateless Widgets.</p>
+<pre><code>
+
+</code></pre>
+    </section>
+
+  </section>
 
 </article>
