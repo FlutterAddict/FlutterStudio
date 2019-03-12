@@ -14,7 +14,11 @@ export default {
       { key: 'flutter/Basic-Widgets', label: 'Basic Widgets' },
       { key: 'flutter/Using-Material', label: 'Using Material Components' },
       { key: 'flutter/Custom-Widgets', label: 'Custom Widgets' },
-    ]
+    ],
+    'Clone Apps': [
+      { key: 'flutter/clones/Instagram', label: 'Instagram (Soon)' },
+      { key: 'flutter/clones/Messenger', label: 'Messenger (Soon)' },
+    ],
   },
   blog: {
     'Flutter vs.': [
