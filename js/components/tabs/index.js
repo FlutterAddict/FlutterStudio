@@ -11,7 +11,7 @@ const tabs = X('.js-tab');
 
 const navigateTo = to => {
   initDrawer(data[to]);
-  loadContent(data[to][0].key);
+  loadContent(data[to][Object.keys(data[to])[0]][0].key);
 };
 
 

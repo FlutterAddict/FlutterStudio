@@ -23,6 +23,7 @@ It is responsive and mobile friendly, supports dark theme (which can be toggled)
 
 
 ## To-do:
+- [ ] Add screenshots and visuals when appropiate
 - [ ] Add content loading placeholder
 - [ ] Normalize AppBar tabs and Drawer tabs and optimize its code
 - [ ] Prism Highlight Line Extension
