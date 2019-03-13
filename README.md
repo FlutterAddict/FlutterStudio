@@ -30,7 +30,6 @@ It is responsive and mobile friendly, supports dark theme (which can be toggled)
 - [ ] Prism Highlight Line Extension
 - [ ] Code copy button
 - [ ] Special onHover effect when hovering on Flutter's functions and widgets
-- [ ] Tags
 - [ ] Persist User Settings
 - [ ] Font Toggler
 - [ ] Add `favicon.ico`
@@ -40,5 +39,6 @@ It is responsive and mobile friendly, supports dark theme (which can be toggled)
 - [ ] Breadcrumbs
 - [ ] Footer
 - [ ] Next Button
+- [x] Tags
 - [x] AppBar and Drawer Shadows
 - [x] Styled Links
