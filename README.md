@@ -1,5 +1,5 @@
 # Flutter Studio
-Better organized and beginner-friendly docs for learning Flutter.
+Better organized and beginner-friendly docs for learning Dart and Flutter.
 
 
 
@@ -23,6 +23,7 @@ It is responsive and mobile friendly, supports dark theme (which can be toggled)
 
 
 ## To-do:
+- [ ] Dev. Blog, Versions its up to, Changelog, Gitmoji
 - [ ] Add screenshots and visuals when appropiate
 - [ ] Add content loading placeholder
 - [ ] Normalize AppBar tabs and Drawer tabs and optimize its code
