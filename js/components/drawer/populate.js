@@ -2,6 +2,10 @@ import { _x } from '../../helpers';
 
 
 
+const tagsAvailable = ['app', 'program'];
+
+
+
 const handleAccordionTap = e => {
   let head = e.path.find(el => el.classList && el.classList.contains('Accordion-head'));
   let body = head.parentElement.querySelector('.Accordion-body');
@@ -43,11 +47,15 @@ export default (drawer, data, onDrawerItemClick) => {
       if (item.active) { div.classList.add('Drawer-item--active'); };
       div.setAttribute('data-content-key', item.key);
       div.innerText = item.label;
-      if (item.program) {
-        let tag = _x('div');
-        tag.classList.add('Tag', 'Tag--program');
-        tag.innerText = 'program';
-        div.appendChild(tag);
+      if (item.tags) {
+        item.tags.forEach(tagName => {
+          if (tagsAvailable.indexOf(tagName) >= 0) {
+            let tag = _x('div');
+            tag.classList.add('Tag', `Tag--${tagName}`);
+            tag.innerText = tagName;
+            div.appendChild(tag);
+          }
+        });
       }
       div.addEventListener('click', () => onDrawerItemClick(div));
       items.push(div);

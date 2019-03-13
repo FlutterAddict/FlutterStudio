@@ -2,7 +2,7 @@ export default {
   dart: {
     'Foundation': [
       { key: 'dart/foundation/0-Intro', label: 'Introduction', active: true },
-      { key: 'dart/foundation/1-Hello-World', label: 'Hello World', program: true },
+      { key: 'dart/foundation/1-Hello-World', label: 'Hello World', tags: ['program'] },
       { key: 'dart/foundation/2-Concepts', label: 'Important Concepts' },
     ],
     'Style Guide': [
@@ -16,7 +16,7 @@ export default {
     'Basics': [
       { key: 'flutter/Welcome', label: 'Welcome to Flutter Studio', active: true },
       { key: 'flutter/Why-Flutter', label: 'Why Flutter?' },
-      { key: 'flutter/Hello-World', label: 'Hello World App' },
+      { key: 'flutter/Hello-World', label: 'Hello World', tags: ['app'] },
       { key: 'flutter/Basic-Widgets', label: 'Basic Widgets' },
       { key: 'flutter/Using-Material', label: 'Using Material Components' },
       { key: 'flutter/Custom-Widgets', label: 'Custom Widgets' },
