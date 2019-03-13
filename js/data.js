@@ -2,7 +2,7 @@ export default {
   dart: {
     'Foundation': [
       { key: 'dart/0-Intro', label: 'Introduction', active: true },
-      { key: 'dart/1-Hello-World', label: 'Hello World' },
+      { key: 'dart/1-Hello-World', label: 'Hello World', program: true },
       { key: 'dart/2-Concepts', label: 'Important Concepts' },
     ]
   },

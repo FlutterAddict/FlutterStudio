@@ -43,6 +43,12 @@ export default (drawer, data, onDrawerItemClick) => {
       if (item.active) { div.classList.add('Drawer-item--active'); };
       div.setAttribute('data-content-key', item.key);
       div.innerText = item.label;
+      if (item.program) {
+        let tag = _x('div');
+        tag.classList.add('Tag', 'Tag--program');
+        tag.innerText = 'program';
+        div.appendChild(tag);
+      }
       div.addEventListener('click', () => onDrawerItemClick(div));
       items.push(div);
       body.appendChild(div);
