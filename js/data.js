@@ -5,9 +5,12 @@ export default {
       { key: 'dart/foundation/1-Hello-World', label: 'Hello World', program: true },
       { key: 'dart/foundation/2-Concepts', label: 'Important Concepts' },
     ],
+    'Style Guide': [
+      { key: 'dart/style/introduction', label: 'Introduction' },
+    ],
     'Language': [
       { key: 'dart/language/keywords', label: 'Keywords' }
-    ]
+    ],
   },
   flutter: {
     'Basics': [
