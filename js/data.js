@@ -30,5 +30,10 @@ export default {
     'Flutter vs.': [
       { key: 'blog/flutter-vs-rn', label: 'React Native', active: true },
     ],
-  }
+  },
+  resources: {
+    'Dart': [
+      { key: 'resources/dart-academy', label: 'Dart Academy', active: true },
+    ],
+  },
 };
