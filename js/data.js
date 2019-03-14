@@ -1,13 +1,13 @@
 export default {
   dart: {
-    'Foundation': [
-      { key: 'dart/foundation/0-Intro', label: 'Introduction', active: true },
-      { key: 'dart/foundation/1-Hello-World', label: 'Hello World', tags: ['program'] },
-      { key: 'dart/foundation/2-Concepts', label: 'Important Concepts' },
+    'Learn': [
+      { key: 'dart/learn/0-Intro', label: 'Introduction', active: true },
+      { key: 'dart/learn/1-Hello-World', label: 'Hello World', tags: ['program'] },
+      { key: 'dart/learn/2-Concepts', label: 'Important Concepts' },
     ],
-    'Style Guide': [
-      { key: 'dart/style/introduction', label: 'Introduction' },
-      { key: 'dart/style/identifiers', label: 'Identifiers' },
+    'Effective Dart': [
+      { key: 'dart/effective_dart/introduction', label: 'Introduction' },
+      { key: 'dart/effective_dart/identifiers', label: 'Identifiers' },
     ],
     'Language': [
       { key: 'dart/language/keywords', label: 'Keywords' },
