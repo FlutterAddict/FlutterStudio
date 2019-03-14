@@ -7,10 +7,11 @@ export default {
     ],
     'Effective Dart': {
       'General': [
-        { key: 'dart/effective_dart/introduction', label: 'Introduction' },
+        { key: 'dart/effective_dart/general/introduction', label: 'Introduction' },
       ],
       'Style Guide': [
-        { key: 'dart/effective_dart/identifiers', label: 'Identifiers' },
+        { key: 'dart/effective_dart/style_guide/introduction', label: 'Introduction' },
+        { key: 'dart/effective_dart/style_guide/identifiers', label: 'Identifiers' },
       ],
     },
     'Language': [
