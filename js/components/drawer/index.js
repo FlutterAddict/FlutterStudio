@@ -1,13 +1,11 @@
-import { x, _x, getWidth } from '../../helpers';
+import { x, X, _x, getWidth } from '../../helpers';
 import populateDrawer from './populate';
 import { load } from '../content';
 import './swipe';
 
 
 
-const init = data => {
-  items = populateDrawer(drawerInner, data, onDrawerItemClick);
-};
+const init = data => populateDrawer(drawerInner, data, onDrawerItemClick);
 
 const onDrawerItemClick = item => {
   activate(item);
@@ -23,6 +21,7 @@ const activate = item => {
 };
 
 const deactivateAllItems = () => {
+  let items = X('.Drawer-item');
   items.forEach(item => item.classList.remove('Drawer-item--active'));
 };
 
@@ -33,7 +32,6 @@ const setVisibility = visibility => drawer.style.display = visibility ? 'block' 
 let burger = x('.js-burger');
 let drawer = x('.js-drawer');
 let drawerInner = x('.js-drawer-inner');
-let items = [];
 
 
 

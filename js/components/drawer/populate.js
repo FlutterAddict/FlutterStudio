@@ -17,36 +17,36 @@ const handleAccordionTap = e => {
   body.style.display = display;
 };
 
+const buildAccordion = (accordionName, data, onDrawerItemClick) => {
 
-
-export default (drawer, data, onDrawerItemClick) => {
-  drawer.innerHTML = '';
-  let items = [];
-
-  let accordions = Object.keys(data);
-
-  accordions.map(acc => {
+  const _buildAccordion = (name, nestedLevel = 1) => {
     let accordion = _x('div');
     accordion.classList.add('Accordion');
     let head = _x('div');
-    head.classList.add('Accordion-head');
+    head.classList.add('Accordion-head', `Accordion-head--${nestedLevel}`);
     head.addEventListener('click', handleAccordionTap);
     let body = _x('div');
     body.classList.add('Accordion-body');
     accordion.appendChild(head);
     accordion.appendChild(body);
-    head.innerText = acc;
+    head.innerText = name;
     let icon = _x('ion-icon');
     icon.classList.add('js-drop-icon');
     icon.setAttribute('name', 'arrow-dropup');
     head.appendChild(icon);
+    return {
+      element: accordion,
+      body: body
+    };
+  };
 
-    data[acc].map(item => {
+  const populateAccordionBody = (body, arr, nestingLevel=1) => {
+    arr.map(item => {
       let div = _x('div');
-      div.classList.add('Drawer-item', 'Accordion-child-1', 'js-drawer-item');
+      div.classList.add('Drawer-item', `Accordion-child-${nestingLevel}`, 'js-drawer-item');
       if (item.active) { div.classList.add('Drawer-item--active'); };
       div.setAttribute('data-content-key', item.key);
-      div.innerText = item.label;
+      div.innerText = `• ${item.label}`;
       if (item.tags) {
         item.tags.forEach(tagName => {
           if (tagsAvailable.indexOf(tagName) >= 0) {
@@ -58,12 +58,39 @@ export default (drawer, data, onDrawerItemClick) => {
         });
       }
       div.addEventListener('click', () => onDrawerItemClick(div));
-      items.push(div);
-      body.appendChild(div);
+      body.appendChild(div); 
     });
+  };
 
+  const buildNestedAccordion = (body, item) => {
+    let nestedAccordionsNames = Object.keys(item);
+    nestedAccordionsNames.map(nestedAccordionName => {
+      let nestedAccordion = _buildAccordion(nestedAccordionName, 2);
+      populateAccordionBody(nestedAccordion.body, item[nestedAccordionName], 2);
+      body.appendChild(nestedAccordion.element);
+    });
+  };
+
+  let accordion = _buildAccordion(accordionName);
+
+  if (Array.isArray(data)) {
+    populateAccordionBody(accordion.body, data);
+  } else {
+    buildNestedAccordion(accordion.body, data);
+  }
+
+  return accordion.element;
+};
+
+
+
+export default (drawer, data, onDrawerItemClick) => {
+  drawer.innerHTML = '';
+
+  let accordions = Object.keys(data);
+
+  accordions.map(acc => {
+    let accordion = buildAccordion(acc, data[acc], onDrawerItemClick);
     drawer.appendChild(accordion);
   });
-  
-  return items;
 };

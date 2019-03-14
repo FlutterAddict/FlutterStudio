@@ -5,10 +5,14 @@ export default {
       { key: 'dart/learn/1-Hello-World', label: 'Hello World', tags: ['program'] },
       { key: 'dart/learn/2-Concepts', label: 'Important Concepts' },
     ],
-    'Effective Dart': [
-      { key: 'dart/effective_dart/introduction', label: 'Introduction' },
-      { key: 'dart/effective_dart/identifiers', label: 'Identifiers' },
-    ],
+    'Effective Dart': {
+      'General': [
+        { key: 'dart/effective_dart/introduction', label: 'Introduction' },
+      ],
+      'Style Guide': [
+        { key: 'dart/effective_dart/identifiers', label: 'Identifiers' },
+      ],
+    },
     'Language': [
       { key: 'dart/language/keywords', label: 'Keywords' },
       { key: 'dart/language/linting', label: 'Linting' },
