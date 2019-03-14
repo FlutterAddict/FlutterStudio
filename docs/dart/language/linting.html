@@ -1,0 +1,34 @@
+<article>
+
+  <h1>Dart Linting</h1>
+  <p>The Dart Linter package defines lint rules that identify and report on "lints" found in Dart code.</p>
+  <p>Linting is performed by the Dart analysis server and the dartanalyzer commandline tool.</p>
+
+  <section>
+    <h2>Installing</h2>
+    <p>The linter is bundled with the <a href="https://www.dartlang.org/tools/sdk">Dart SDK</a>. If you have an updated Dart SDK already, you're done!</p>
+  </section>
+
+  <section>
+    <h2>Usage</h2>
+    <p>The linter gives you feedback to help you catch potential errors and keep your code in line with <a href="#">Effective Dart Style Guide</a>.</p>
+    <p>You can find the list of lints you can use <a href="https://dart-lang.github.io/linter/lints/">here</a>.</p>
+
+    <section>
+      <h3>configuration</h3>
+      <p>create new file at the root of the package, in the same directory as the <code>pubspec.yaml</code> file and name it <code>analysis_options.yaml</code>.</p>
+      <p>Here's a basic template of this file you can use:</p>
+<pre><code>analyzer:
+  options:
+    #treat missing required params as a warning and not just a hint
+    missing_required_params: warning 
+
+linter:
+  rules:
+    camel_case_types
+    # find out more linter rules in our Effective Dart Style Guide</code></pre>
+      <p>Note: Use two spaces instead of tab in .yaml files.</p>
+    </section>
+  </section>
+
+</article>

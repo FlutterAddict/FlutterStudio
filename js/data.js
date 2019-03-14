@@ -10,7 +10,8 @@ export default {
       { key: 'dart/style/identifiers', label: 'Identifiers' },
     ],
     'Language': [
-      { key: 'dart/language/keywords', label: 'Keywords' }
+      { key: 'dart/language/keywords', label: 'Keywords' },
+      { key: 'dart/language/linting', label: 'Linting' },
     ],
   },
   flutter: {
