@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(TheApp());
-}
+
+
+void main() => runApp(TheApp());
+
+
 
 class TheApp extends StatelessWidget {
-  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'The App',
@@ -15,7 +16,6 @@ class TheApp extends StatelessWidget {
 }
 
 class HomeScreen extends StatelessWidget {
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MyAppBar(),
@@ -27,10 +27,12 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
+
+
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
-  @override
+
   Size get preferredSize => new Size.fromHeight(kToolbarHeight);
-  @override
+
   Widget build(BuildContext context) {
     return AppBar(
       leading: IconButton(
@@ -50,8 +52,9 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 }
 
+
+
 class AddFAB extends StatelessWidget {
-  @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
       tooltip: 'Example FAB',
