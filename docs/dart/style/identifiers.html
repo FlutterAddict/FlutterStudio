@@ -1,0 +1,24 @@
+<article>
+  <h1>Dart Style Guide: Identifiers</h1>
+
+  <section>
+    <h2>Three Flavors of Identifiers</h2>
+    <p>Identifiers in Dart come in three flavors:</p>
+    <ol>
+      <li><p><code>UpperCamelCase</code> - first letter of each word is capitalized, including first word</p></li>
+      <li><p><code>lowerCamelCase</code> - first letter of each word is capitalized except of the first word which is always lowercase, even if it's an acronym</p></li>
+      <li><p><code>lowercase_with_underscores</code> - words in lowercase only, even for acronyms, separated with undescores (_)</p></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Use UpperCamelCase</h2>
+    <p>Name types using UpperCamelCase - classes, enums, typedefs, and type parameters should capitalize first letter of each word including the first word and use no separators.</p>
+<pre><code>// good
+class SliderMenu { ... }
+class HttpRequest { ... }
+typedef num Adder(num x, num y);
+typedef Predicate&lt;T&gt; = bool Function(T value);</code></pre>
+  </section>
+
+</article>

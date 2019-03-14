@@ -7,6 +7,7 @@ export default {
     ],
     'Style Guide': [
       { key: 'dart/style/introduction', label: 'Introduction' },
+      { key: 'dart/style/identifiers', label: 'Identifiers' },
     ],
     'Language': [
       { key: 'dart/language/keywords', label: 'Keywords' }
