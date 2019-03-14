@@ -40,6 +40,7 @@ export default {
   resources: {
     'Dart': [
       { key: 'resources/dart-academy', label: 'Dart Academy', active: true },
+      { key: 'resources/dartlang', label: 'DartLang.org' },
     ],
   },
 };
