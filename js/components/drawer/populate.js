@@ -2,7 +2,7 @@ import { _x } from '../../helpers';
 
 
 
-const tagsAvailable = ['app', 'program'];
+const tagsAvailable = ['app', 'program', 'game'];
 
 
 

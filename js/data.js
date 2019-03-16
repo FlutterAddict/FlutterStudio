@@ -18,6 +18,9 @@ export default {
       { key: 'dart/language/keywords', label: 'Keywords' },
       { key: 'dart/language/linting', label: 'Linting' },
     ],
+    'Games': [
+      { key: 'dart/games/snake', label: 'Snake', tags: ['game'] }
+    ]
   },
   flutter: {
     'Basics': [
